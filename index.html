@@ -1,1 +1,129 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Selector Playground</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  padding: 20px;
+}
+.container {
+  max-width: 850px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+}
+h1 { color: #2563eb; text-align: center; }
+.section {
+  padding: 15px;
+  margin: 15px 0;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+code { color: #db2777; }
+.demo { padding: 10px; background: #e0f2fe; }
+#special { color: red; }
+.highlight { background: yellow; }
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+input { padding: 9px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>CSS Selector Playground</h1>
+<p>Explore different CSS selectors and see examples.</p>
+
+<div class="section">
+<h2>1. Element Selector</h2>
+<code>p { color: blue; }</code>
+<p>All paragraph elements are selected.</p>
+</div>
+
+<div class="section">
+<h2>2. ID Selector</h2>
+<code>#special { color: red; }</code>
+<p id="special">This paragraph has a unique ID.</p>
+</div>
+
+<div class="section">
+<h2>3. Class Selector</h2>
+<code>.highlight { background: yellow; }</code>
+<p class="highlight">This uses a class selector.</p>
+</div>
+
+<div class="section">
+<h2>4. Universal Selector</h2>
+<code>* { box-sizing: border-box; }</code>
+<p>Selects every HTML element.</p>
+</div>
+
+<div class="section">
+<h2>5. Group Selector</h2>
+<code>h2, p { font-family: Arial; }</code>
+<p>Selects multiple element types.</p>
+</div>
+
+<div class="section">
+<h2>6. Descendant Selector</h2>
+<code>div p { color: green; }</code>
+<div class="demo">
+<p>Selects paragraphs inside div elements.</p>
+</div>
+</div>
+
+<div class="section">
+<h2>7. Child Selector</h2>
+<code>div > p { color: purple; }</code>
+<p>Selects direct child paragraphs.</p>
+</div>
+
+<div class="section">
+<h2>8. Attribute Selector</h2>
+<code>input[type="text"]</code>
+<input type="text" placeholder="Text input">
+</div>
+
+<div class="section">
+<h2>9. Pseudo-class Selector</h2>
+<code>button:hover { background: green; }</code>
+<button>Hover over me</button>
+</div>
+
+<div class="section">
+<h2>10. Pseudo-element Selector</h2>
+<code>p::first-letter { color: red; }</code>
+<p>This paragraph demonstrates a pseudo-element.</p>
+</div>
+
+<div class="section">
+<h2>11. Adjacent Sibling Selector</h2>
+<code>h3 + p { color: orange; }</code>
+<h3>Heading</h3>
+<p>Paragraph immediately after heading.</p>
+</div>
+
+<div class="section">
+<h2>12. General Sibling Selector</h2>
+<code>h3 ~ p { color: brown; }</code>
+<h3>Another heading</h3>
+<p>First sibling paragraph.</p>
+<p>Second sibling paragraph.</p>
+</div>
+
+</div>
+</body>
+</html>
+
